@@ -32,7 +32,7 @@ while True:
       Telegram_url = ("https://api.telegram.org/bot" + config.Etherr_Bot_api + "/sendMessage?chat_id=-" + config.chat_id + "&text=Ethereum Price is " + price_cad + " CAD")
 
       requests.get(Telegram_url)
-      time.sleep(10800) ## Sleep for 3 hours
+      time.sleep(600) ## Sleep for 10 minutes
 
   if __name__ == '__main__':
       main()
